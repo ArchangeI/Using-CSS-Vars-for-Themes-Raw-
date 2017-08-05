@@ -1,0 +1,73 @@
+<div class="hidden">
+  <input id=audiofile type=file>
+  <div id="audio_box"></div>
+</div>
+
+<h2 class="title">Using CSS Vars for Themes</h2>
+
+<div class="demo">
+  <div id="player">
+    <div class="visor">
+      <div class="time">
+        <span class="current">0:00</span>
+        <span class="duration">0:00</span>
+      </div>
+      <div class="info">
+        <div class="track">Artist - Song Title</div>
+        <div class="status">
+          <span></span>
+          <span>128 KBPS</span>
+          <span>44 KHZ</span>
+          <span><i class="zmdi zmdi-surround-sound"></i></span>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="open-button" alt="open">
+          <i class="zmdi zmdi-eject"></i>
+        </button>
+      <button class="play-button" alt="play">
+          <i class="zmdi zmdi-play"></i>
+        </button>
+        <button class="pause-button" alt="pause">
+          <i class="zmdi zmdi-pause"></i>
+        </button>
+      <button class="repeat-button" alt="repeat" title="repeat">
+          <i class="zmdi zmdi-repeat"></i>
+        </button>
+    </div>
+    <div class="analyser">
+      <canvas id="analyser_render"></canvas>
+    </div>
+  </div>
+
+  <div class="themes">
+    <div class="radio">
+      <input id="radio-1" name="radio" type="radio" value="0" checked>
+      <label for="radio-1" class="radio-label">Night</label>
+    </div>
+
+    <div class="radio">
+      <input id="radio-2" name="radio" type="radio" value="1">
+      <label  for="radio-2" class="radio-label">Fire</label>
+    </div>
+
+    <div class="radio">
+      <input id="radio-3" name="radio" type="radio" value="2">
+      <label for="radio-3" class="radio-label">Classic</label>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <h2>About this Pen</h2>
+  <p>To test the player just click on the open (<i class="zmdi zmdi-eject"></i>) button, select your favorite audio file and see how it works.</p>
+  <p>This is one of the new features comming in the next update of Flamapop, soon you will be able to select from three themes we made for you. </p>
+  <p>Flamapop is a Google Chrome extension that allows to control the playback of the current Youtube video from any tab in your browser.</p>
+  <p class="right">
+    <a href="https://chrome.google.com/webstore/detail/flamapop/knnlmpnmodboangkbfcghejobbbokadl" target="_blank">
+      <img src="https://lh3.googleusercontent.com/IuTJuEcuFZ0s8CKZ4Ie6PLngqB4aq5e8TsUz0kPgKjLZ6siNYIpmEoI4S_zvxYJiVl_3ZQTxSg=w26-h26-e365" alt="flamapop-logo" />
+      <span>See Flamapop at Chrome Store</span>
+    </a>
+  </p>
+</footer>
